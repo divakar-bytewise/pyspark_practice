@@ -14,6 +14,7 @@ df1 = spark.read.json("data/demo_2.json")
 df2= spark.read.json(["data/demo_2.json","data/demo_3.json"])
 #this is the one more way to read the file.
 df3 =spark.read.format("json").load(["data/demo_2.json","data/demo_3.json"])
+
 df.show()
 df1.show()
 df2.show()
